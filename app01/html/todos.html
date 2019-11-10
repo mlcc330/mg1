@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todos</title>
+</head>
+<body>
+<h1>Todos</h1>
+<ul>
+    {{range.Todos}}
+        {{if.Done}}
+            <li><s>{{.Task}}</s></li>
+        {{else}}
+            <li>{{.Task}}</li>
+        {{end}}
+    {{end}}
+</ul>
+</body>
+</html>
